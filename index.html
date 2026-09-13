@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mia O'Malley — Fashion, Beauty, Lifestyle Content Creator</title>
+<meta name="description" content="Mia O'Malley — fashion, beauty, lifestyle content creator.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --coral: #c0492f;
+    --cream: #f8f6f2;
+    --white: #ffffff;
+    --olive: #44513f;
+    --rose: #b5655c;
+    --rose-deep: #a4564e;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    background: var(--cream);
+    border-top: 8px solid var(--coral);
+    border-bottom: 8px solid var(--coral);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    color: var(--olive);
+  }
+
+  .card {
+    background: var(--white);
+    max-width: 34rem;
+    width: 100%;
+    padding: 4rem 2.5rem 3.5rem;
+    text-align: center;
+    box-shadow: 0 1px 0 rgba(68, 81, 63, 0.06);
+    animation: settle 0.9s ease-out both;
+  }
+
+  @keyframes settle {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card { animation: none; }
+  }
+
+  h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(2.4rem, 7vw, 3.4rem);
+    line-height: 1.15;
+    margin-bottom: 1.1rem;
+  }
+
+  .role {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    opacity: 0.9;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact {
+    display: inline-block;
+    background: var(--rose);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    padding: 0.95rem 2.1rem;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+  }
+
+  .contact:hover { background: var(--rose-deep); }
+
+  .contact:focus-visible {
+    outline: 2px solid var(--olive);
+    outline-offset: 3px;
+  }
+
+  .socials {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    border: 1.5px solid var(--olive);
+    color: var(--olive);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .socials a:hover {
+    background: var(--rose);
+    border-color: var(--rose);
+    color: var(--white);
+  }
+
+  .socials a:focus-visible {
+    outline: 2px solid var(--olive);
+    outline-offset: 3px;
+  }
+
+  .socials svg {
+    width: 1.15rem;
+    height: 1.15rem;
+    fill: currentColor;
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <h1>Mia O'Malley</h1>
+    <p class="role">Fashion, Beauty, Lifestyle Content Creator</p>
+    <a class="contact" href="mailto:collaborate@miaomalley.com">Let's work together</a>
+    <div class="socials">
+      <a href="https://www.instagram.com/miaomalley" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.2-.1 1.6-.1 4.8-.1zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.5.2-1.8.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.3-.3.7-.3 1.8-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.5.3 1.8.2.5.4.8.7 1.1.3.3.6.5 1.1.7.3.1.7.3 1.8.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.5-.2 1.8-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.3.3-.7.3-1.8.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.5-.3-1.8-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.3-.1-.7-.3-1.8-.3-1.2-.1-1.6-.1-4.7-.1zm0 3.1a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zm5.2-2.9a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@plussizebabywearing" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h3c.1 1 .5 2 1.2 2.9.8 1 1.9 1.6 3.2 1.8v3.1c-1.6 0-3.1-.5-4.4-1.4v6.9c0 1.3-.3 2.5-1 3.6a6.6 6.6 0 0 1-5.7 3.1 6.6 6.6 0 0 1-6.5-6.6A6.6 6.6 0 0 1 13 8.8c.4 0 .7 0 1 .1v3.2a3.4 3.4 0 0 0-4.5 3.3 3.4 3.4 0 0 0 3.4 3.4c1.9 0 3.5-1.5 3.5-3.4V2z" transform="scale(0.92) translate(0.5,0.5)"/></svg>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
